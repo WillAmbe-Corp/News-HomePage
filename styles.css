@@ -1,0 +1,165 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    cursor: pointer;
+}
+.content{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(3, 25%);
+    justify-content: center;
+}
+#Home, #New{
+    font-family: "Inter", sans-serif;
+}
+.image-head{
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+.image-head img{
+    width: 98%;
+    object-fit: cover;
+}
+h1{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    width: 75%;
+    font-weight: 800;
+    font-size: 40px;
+}
+#Home{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+#Home p{
+    width: 320px;
+    line-height: 25px;
+    font-size: 15px;
+}
+#Home button{
+    text-transform: uppercase;
+    padding: 10px 18px;
+    border: transparent;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin: 10px 0;
+    background-color: hsl(5, 85%, 63%);
+    cursor: pointer;
+}
+#Home button:hover{
+    background-color: hsl(240, 100%, 5%);
+    color: hsl(36, 100%, 99%);
+}
+li:hover{
+    color: hsl(5, 85%, 63%);
+}
+#New{ 
+    grid-column: 3/4;
+    grid-row: 1/3;
+    background-color: hsl(240, 100%, 5%);
+    width: 340px;
+    padding: 50px 10px;
+    line-height: 30px;
+}
+#New h2{
+    margin: -35px 5px;
+    color: hsl(35, 77%, 62%);
+    margin-bottom: 20px;
+}
+#New h3{
+    color: hsl(36, 100%, 99%);
+}
+#New p{
+    color: hsl(233, 8%, 79%);
+    font-size: 15px;
+}
+.Cars, .AI{
+    border-bottom: 1px solid hsl(233, 8%, 79%);
+    padding-bottom: 30px;
+}
+.VC, .AI{
+    padding-top: 30px;
+}
+#New .VC{
+    margin-bottom: -35px;
+}
+.Popular{
+    grid-column: 1/4;
+    grid-row: 3/4;
+}
+#Popular{
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    font-family: "Inter", sans-serif;
+    padding: 30px;
+    gap: 5px;
+    /* width: 1100px; */
+}
+#Popular .retro-pc{
+    margin-left: -30px;
+}
+.gaming-growth{
+    margin-left: 10px;
+}
+#Popular img{
+    float: left;
+    margin-right: 10px;
+}
+.popular-content{
+    line-height: 20px;
+}
+#Popular h3{
+    margin: 10px 0;
+    overflow: hidden;
+}
+#Popular h2{
+    color: hsl(5, 85%, 63%);
+    overflow: hidden;
+}
+#Popular p{
+    color: hsl(236, 13%, 42%);
+    font-size: 15px;
+}
+@media(max-width: 425px){
+    nav ul{
+        display: none;
+    }
+    .content{
+        display: block;
+        padding: 10px;
+    }
+    h1{
+        width: 60%;
+        font-size: 28px;
+    }
+    #Popular{
+        display: block;
+    }
+    #Popular h3{
+        width: 220px;
+        font-size: 17px;
+    }
+    #Popular p{
+        width: 220px;
+    }
+    #Popular .top-laptops, .gaming-growth{
+        margin-left: -30px;
+        margin-top: 10px;
+    }
+    .popular-content{
+        line-height: 30px;
+    }
+}
